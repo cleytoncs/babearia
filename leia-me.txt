@@ -1,0 +1,40 @@
+Senha do WP para administração do site é 
+login: Barbearia 
+senha: Barbearia@2021#
+
+1° - Você precisa ter um servidor com php e mysql
+
+2° - Descompacte os arquivos baixado e faça o upload de todos os itens da pas site para o servidor.
+
+3° - Crie o banco de dados no mysql e faça o upload do do arquivo bd_barbearia.sql zipado dentro da pasta banco_dados, o nome do banco a ser criado fica a seu critério.
+
+4º - Faça o upload da pasta barbearia via ftp ou os arquivos para pasta criada no seu public_html de sua hospedagem.
+
+5° Apos os arquivos etrem no servidor e o banco esta criado, voce vai abrir a o arquivo wp-config.php e vai trocar as informação do banco ja se encontra no mesmo, pelas informações do seu banco de dados: Usuário do banco de dados MySQL */
+
+// ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
+/** O nome do banco de dados do WordPress */
+define( 'DB_NAME', 'nome_banco' );
+
+
+/** Usuário do banco de dados MySQL */
+define( 'DB_USER', 'nome_usuario' );
+
+
+/** Senha do banco de dados MySQL */
+define( 'DB_PASSWORD', 'senha_banco' );
+
+
+/** Nome do host do MySQL */
+define( 'DB_HOST', 'nome_host' );
+
+6° Dentro do banco de dados você irá procurar a tabela wp_options e substituir as opções que tiverem o dominio http://localhost/barbearia pelo seu dominio, ou seja, o nome do seu site.
+
+7° Após a conclusão destes 6 passos, seu site estará instalado, porem será necessário as configurações no painel do wordpress que se encontra no seguinte endereço: seusite.com.br/admin   ou  seusite.com.br/wp-login.php   o login: Barbearia  e a senha:Barbearia@2021#
+
+8° Quando logar troque as URL em APARÊNCIA > MENU para que o menu direcione para seu site e não para o que estava configurado anteriormente.
+
+9° - Troque também a URL em CONFIGURAÇÕES > GERAL 
+Não esqueça de trocar Login e Senha.
+
+10° - Para maior aproveitamento do script adquirido, se faz necessário ao menos o conhecimento básico de Wordpress, PHP e Mysql.
